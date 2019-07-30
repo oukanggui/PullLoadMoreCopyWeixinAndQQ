@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.okg.pullloadmore.view.pullextend.PullExtendLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_extend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <!--头部-->
+    <com.okg.pullloadmore.view.pullextend.ExtendListHeader
+        android:id="@+id/extend_header"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_bar">
+    </android.support.v7.widget.RecyclerView>
+    <!--底部区域-->
+    <com.okg.pullloadmore.view.pullextend.ExtendListFooter
+        android:id="@+id/extend_footer"
+        android:layout_width="match_parent"
+        android:layout_height="460dp" />
+</com.okg.pullloadmore.view.pullextend.PullExtendLayout>
