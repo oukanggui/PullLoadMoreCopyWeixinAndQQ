@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="8dp"
-    tools:ignore="MissingPrefix" >
+    tools:ignore="MissingPrefix"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/ic_avatar"
@@ -13,7 +14,7 @@
         android:layout_height="50dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="10dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/qq_logo"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +48,7 @@
             android:layout_marginTop="4dp"
             android:textColor="#999999"
             android:textSize="12sp"
-            android:text="周六踢球，速到"/>
+            android:text="小狗子，周六踢球，收到速回"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="0.1dp"

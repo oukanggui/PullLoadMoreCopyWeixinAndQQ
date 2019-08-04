@@ -59,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
         mDatas.add("测试11");
         mDatas.add("测试12");
         mDatas.add("测试13");
+        mDatas.add("测试14");
+        mDatas.add("测试15");
+        mDatas.add("测试16");
+        mDatas.add("测试17");
+        mDatas.add("测试18");
         mListContent.setAdapter(new MainContentAdapter(mDatas).setItemClickListener(new CommonAdapter.ItemClickListener() {
             @Override
             public void onItemClicked(int position, View view) {
