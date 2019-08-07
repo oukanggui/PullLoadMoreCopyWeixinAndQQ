@@ -341,7 +341,10 @@ public class PullExtendLayout extends LinearLayout implements IPullToExtend {
             case MotionEvent.ACTION_MOVE:
                 final float deltaY = ev.getY() - mLastMotionY;
                 mLastMotionY = ev.getY();
-                mPullDown = deltaY > 0;
+                // deltaY = 0时，不重置mPullDown标志位，mPullDown标志位值沿用deltaY != 0时的状态值
+                if (deltaY != 0) {
+                    mPullDown = deltaY > 0;
+                }
                 Log.d(TAG, "onTouchEvent,MotionEvent.ACTION_MOVE,deltaY = " + deltaY);
                 if (isPullRefreshEnabled() && isReadyForPullDown(deltaY)) {
                     // 处理头部滑动
